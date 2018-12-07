@@ -21,6 +21,8 @@ public class UserProfileFragment extends Fragment {
 
         TableLayout tableLayout = view.findViewById(R.id.profileTable);
 
+
+        //foreach list item...
         for(int i=0; i<=55; i++){
             //add sales codes to the layout.... for each object in list(static list?)
             tableLayout.addView(inflater.inflate(R.layout.table_item, container, false));
@@ -28,11 +30,11 @@ public class UserProfileFragment extends Fragment {
         return view;
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-
-        //populate the table rows with sale codes retrieved from each corresponding UserProfile object fetched from the userProfile list..
-        //for each -->List item TL.addView(table_item with textView.setText(listItem.getSalesCode)).
-    }
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//
+//        //populate the table rows with sale codes retrieved from each corresponding UserProfile object fetched from the userProfile list..
+//        //for each -->List item TL.addView(table_item with textView.setText(listItem.getSalesCode)).
+//    }
 }
